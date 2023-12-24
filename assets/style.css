@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Gwendolyn:wght@700&display=swap');
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    padding-top: 70px;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0 !important;
+    left: 0;
+    background-color:rgb(56, 139, 1);
+    z-index: 10;
+}
+header a{
+    text-decoration: none;
+    color: white;
+}
+.container-fluid{
+  gap: 130px;
+}
+.navbar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+
+
+.nav-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nav-logo span:nth-child(1){
+    font-weight: 700 !important;
+    font-size: 28px;
+    color:rgb(0, 70, 0);
+    text-shadow: 0 5px 20px rgb(91, 228, 1);
+
+}
+.nav-logo span:nth-child(2){
+    font-weight: 500;
+    /* font-size: 20px; */
+    transform: translateY(-10px);
+    color: white;
+    text-shadow: 0 5px 20px rgb(10, 0, 0);
+
+}
+.spacial{
+  font-family: 'Gwendolyn', 'cursive';
+}
+.nav-menu{
+    display: flex;
+    gap: 200px;
+}
+.nav-menu .nav-list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    gap: 150px;
+}
+.nav-menu .nav-list .nav-item{
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+.nav-menu .nav-list .nav-item a{
+  color:  rgb(0, 70, 0) !important;
+  font-size: 20px;
+  font-weight: 900;
+  text-shadow: 0 5px 20px rgb(91, 228, 1);
+}
+.nav-menu .nav-list .nav-item span{
+    display: block;
+    text-align: center;
+    font-size: smaller;
+}
+.nav-menu .nav-list .nav-item a:hover{
+    color: rgb(74, 224, 4) !important;
+    text-shadow: 0 5px 20px rgb(0, 0, 0);
+
+}
+.nav-button{
+    display: flex;
+    align-items: center;
+}
+ Button{
+    background-color: rgb(0, 70, 0);
+    color: white;
+    padding: 8px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px !important;
+    box-shadow: 0px 5px 10px rgb(41, 41, 41);
+}
+Button:hover{
+  background-color: rgb(59, 184, 1)
+
+}
+
+.nav-menu img{
+    width: 4rem;
+}
+
+/* .nav-btns{
+
+} */
+.change-theme{
+  color:rgb(255, 255, 255) ;
+  font-size: 25px !important;
+  width: 25px;
+  cursor: pointer;
+}
+.change-theme:hover{
+  color:rgb(255, 0, 0) !important ;
+}
+
+  /* HOME */
+  .home{
+    background-image: url(./images/santaa.png), linear-gradient(rgb(56, 139, 1),rgb(56, 139, 1));
+    background-repeat: no-repeat;
+    background-size: contain;
+    object-fit: contain;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding-top: 10% !important;
+ 
+  }
+
+  .home-container{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  .home-container .spacial{
+    
+    color: white;
+    font-size: 60px;
+    transform: rotate(30deg) !important;
+  }
+
+  .home-number,
+  .home-data{
+    display: inline;
+  }
+  .home-container .home-text{
+    width: 37%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .home-text h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    color: white;
+    text-shadow: 0 5px 20px rgb(31, 77, 0);
+
+  }
+  .home-text p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: white;
+    text-shadow: 0 5px 20px rgb(31, 77, 0);
+    transform: translateY(-14px);
+    text-align: center;
+    padding-top: 10px;
+
+  }
+  .home-number{
+    position: relative;
+    width: 44px;
+    height: 44px;
+    color: white;
+    background-color: rgb(0, 70, 0);
+    border-radius: 50%;
+    font-size: 25px;
+    padding: 10px;
+  }
+  .home-number::after{
+    content: '';
+    position: absolute;
+    right: -1px;
+    top: -2px;
+    width: 53px;
+    height: 53px;
+    border: 8px solid rgb(113, 255, 47);
+    border-radius: 50%;
+    border-right-color:rgb(56, 139, 1);
+    border-top-color:rgb(56, 139, 1) ;
+    border-bottom-color:rgb(56, 139, 1) ;
+    transform: rotate(45deg);
+  }
+ 
+ .mini-image{
+  display: flex;
+  flex-direction: row !important;
+  gap: 100px;
+ }
+
+  .home-hat,
+  .home-santa{
+    position: absolute;
+  }
+  .home-hat{
+    width: 7% !important;
+    height: 14% !important;
+     top: 8rem;
+    left: 5rem;
+    transform: rotate(30deg) !important;
+  }
+
+  .home-santa{
+    width: 10% !important;
+    height: 20% !important;
+    left:65rem;
+    transform: rotate(-20deg) !important;
+  }
+
+   @media screen and (max-width: 1150px) 
+{  
+  .container-fluid{
+    gap: 0px;
+  }     
+  .home-container{
+    display: flex;
+    flex-direction: column !important;
+    gap: 50px;
+    align-items: flex-end;
+    justify-content: flex-end;
+    transform: translateY(80%);
+  }
+  .home-container .home-text{
+    width: 100%;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    text-align: center;
+  }
+  .home-container .spacial{
+    display: none;
+  }
+  .home-text h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(194, 255, 189);
+    color: rgb(0, 70, 0) ;
+    border-radius: 9px;
+  }
+  .home-text p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 10px;
+    color: white;
+    text-align: center;
+    background-color: rgb(194, 255, 189);
+    color: rgb(0, 70, 0) ;
+    margin-top: 27px;
+    border-radius: 9px;
+
+  }
+  Button{
+    background-color: rgb(0, 70, 0);
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px !important;
+    box-shadow: 0px 5px 10px rgb(41, 41, 41);
+}
+  .mini-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   }
+   .home-hat{
+   display: none;
+  }
+  .home-santa{
+    display: none;
+  }
+
+}
+
+
+/* ***************DARK**************** */
+
+.dark-theme header{
+  position: fixed;
+  width: 100%;
+  top: 0 !important;
+  left: 0;
+  background-color:rgb(31, 0, 0);
+  z-index: 10;
+}
+.dark-theme .home{
+  background-image: url(./images/santaa.png), linear-gradient(rgb(31, 0, 0),rgb(31, 0, 0));
+  background-repeat: no-repeat;
+  background-size: contain;
+  object-fit: contain;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  padding-top: 10% !important;
+
+}
+.dark-theme .nav-menu .nav-list .nav-item a{
+  color:  rgb(255, 255, 255) !important;
+  font-size: 20px;
+  font-weight: 900;
+  text-shadow: 0 5px 20px rgb(12, 0, 0);
+}
+.dark-theme .nav-menu .nav-list .nav-item a:hover{
+  color:  rgb(255, 0, 0) !important;
+
+}
+.dark-theme  .nav-logo span:nth-child(1){
+  font-weight: 700 !important;
+  font-size: 28px;
+  color:rgb(255, 0, 0);
+  text-shadow: 0 5px 20px rgb(32, 0, 0);
+
+}
+.dark-theme Button{
+  background-color: rgb(255, 0, 0);
+  color: white;
+  padding: 8px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px !important;
+  box-shadow: 0px 5px 10px rgb(41, 41, 41);
+}
+.dark-theme Button:hover{
+  background-color: rgb(241, 171, 171);
+  color: rgb(46, 2, 2);
+  padding: 8px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px !important;
+  box-shadow: 0px 5px 10px rgb(41, 41, 41);
+}
+.dark-theme .home-number{
+  position: relative;
+  width: 44px;
+  height: 44px;
+  color: white;
+  background-color:rgb(117, 0, 0);
+  border-radius: 50%;
+  font-size: 25px;
+  padding: 10px;
+}
+.dark-theme .home-number::after{
+  content: '';
+  position: absolute;
+  right: -1px;
+  top: -2px;
+  width: 53px;
+  height: 53px;
+  border: 8px solid rgb(255, 0, 0);
+  border-radius: 50%;
+  border-right-color:rgb(31, 0, 0);
+  border-top-color:rgb(31, 0, 0) ;
+  border-bottom-color:rgb(31, 0, 0) ;
+  transform: rotate(45deg);
+}
+
+.dark-theme .home-text h1{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 50px;
+  color:rgb(255, 255, 255);
+  text-shadow: 0 0px 10px rgb(17, 0, 0);
+
+}
+.dark-theme .home-text p{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  color:rgb(255, 255, 255);
+  text-shadow: 0 0px 40px rgb(44, 1, 1);
+  transform: translateY(-30px);
+  text-align: center;
+  padding-top: 10px;
+
+}
